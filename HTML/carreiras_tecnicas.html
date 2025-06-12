@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Titulo da pagina: -->
+
+  <title>Carreiras Técnicas</title>
+
+  <!-- Links do CSS para o header e a página própria -->
+
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/carreiras.css">
+
+  <!-- Link da fonte Bebas Neue que foi utilizada no desing original do projeto no Canva -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- Menu superior do site -->
+  <header class="menu-superior">
+    <nav class="menu">
+        <!-- Link para a página inicial -->
+        <a href="./pagina_inicial.html"><img src="../Imagens/logo.png" alt=""></a>
+        <ul>
+            <!-- Link para a página de carreiras -->
+            <li><a href="./menu_carreiras.html" class="ativo">carreiras</a></li>
+
+            <!-- Link para a página de Dicas -->
+            <li><a href="./dicas.html">dicas</a></li>
+
+            <!-- Link para a página de criadores -->
+            <li><a href="./os_criadores.html">os criadores</a></li>
+
+            <!-- Link para a página de contato -->
+            <li><a href="./contato.html">contato</a></li>
+        </ul>
+    </nav>
+</header>
+  
+  <main>
+      <!-- Container da lista de carreiras: -->
+
+      <div class="container">
+
+        <!-- Lista de carreiras: -->
+
+        <ul class="lista-carreiras">
+            <li><a href="#">Desenvolvedor de Software</a></li>
+            <li><a href="#">Desenvolvedor Front-End</a></li>
+            <li><a href="#">Desenvolvedor Back-End</a></li>
+            <li><a href="#">Desenvolvedor Full Stack</a></li>
+            <li><a href="#">Desenvolvedor Mobile</a></li>
+            <li><a href="#">Administrador de Redes</a></li>
+            <li><a href="#">Analista de Sistemas</a></li>
+            <li><a href="#">Analista de Infraestrutura de TI</a></li>
+            <li><a href="#">Analista de Suporte Técnico</a></li>
+            <li><a href="#">Especialista em Cloud Computing</a></li>
+            <li><a href="#">Especialista em Segurança da Informação</a></li>
+            <li><a href="#">UX/UI <br>DESIGNER</a></li>
+        </ul>
+    </div>
+
+    <!-- Div escondida para aparecer quando o usuário clicar em uma das carreiras
+     através do javascript irá mostrar uma breve descrição da função -->
+
+    <div class="overlay" id="overlay"></div>
+    <div class="descricao-container" id="descricao">
+      <span class="botao-fechar" id="botao-fechar">&times;</span>
+      <div id="descricao-texto"></div>
+    </div>    
+  </main>
+
+  <div class="container">
+    <footer class="rodape">
+
+        <h3 class="titulo-footer">Caminhos GTI,2024</h3>
+        <p class="texto-footer">
+            Este site foi desenvolvido para um projeto sem fins lucrativos, qualquer tentativa de vender algum conteúdo do site está estritamente proibida.
+        </p>
+        <p class="copyright">Copyright &copy; 2024</p>
+    </footer>
+  </div>
+    <!-- Importação do Javascript no final da página -->
+
+    <script src="../Javascript/carreiras_tecnicas.js"></script>
+</body>
+</html>

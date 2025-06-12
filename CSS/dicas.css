@@ -1,0 +1,94 @@
+.content{
+    display: flex;
+}
+
+.titulo-principal {
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    background-color: #0a2138;
+    color: white;
+    font-size: 60px;
+    color: #24c1c4;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.texto-principal{
+    color: white;
+    font-size: 25px;
+}
+
+.content img{
+    width: 450px;
+    height: 350px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.titulo-dica-um,
+.titulo-dica-dois,
+.titulo-dica-tres,
+.titulo-dica-quatro{
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.texto-dica-um,
+.texto-dica-dois,
+.texto-dica-tres,
+.texto-dica-quatro{
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767px){
+    .content{
+        display: block;
+    }
+
+    .content img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    .titulo-principal{
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .texto-principal{
+        font-size: 15px;    
+        margin: 0;
+        padding: 0 0 0 16px;
+
+    }
+
+    .titulo-dica-um,
+    .titulo-dica-dois,
+    .titulo-dica-tres,
+    .titulo-dica-quatro{
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .texto-dica-um,
+    .texto-dica-dois,
+    .texto-dica-tres,
+    .texto-dica-quatro{
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}

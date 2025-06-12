@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titulo da pagina: -->
+     
+    <title>Contato</title>
+
+    <!-- Links do CSS para o header e a página própria -->
+
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/contato.css">
+
+    <!-- Link da fonte Bebas Neue que foi utilizada no desing original do projeto no Canva -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Menu superior do site -->
+    <header class="menu-superior">
+        <nav class="menu">
+            <!-- Link para a página inicial -->
+            <a href="../HTML/pagina_inicial.html"><img src="../Imagens/logo.png" alt=""></a>
+            <ul>
+                <!-- Link para a página de carreiras -->
+                <li><a href="../HTML/menu_carreiras.html">carreiras</a></li>
+
+                <!-- Link para a página de Dicas -->
+                <li><a href="../HTML/dicas.html">dicas</a></li>
+
+                <!-- Link para a página de criadores -->
+                <li><a href="../HTML/os_criadores.html">os criadores</a></li>
+
+                <!-- Link para a página de contato -->
+                <li><a href="../HTML/contato.html" class="ativo">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Container do formulário: -->
+    <div class="container-formulario">
+
+        <!-- Início do formulário: -->
+        <form id="formulario">
+            <!-- Nome e campo para preencher (input)-->
+            <label for="Nome">Nome</label>
+            <input type="text" name="nome" class="campo" required> 
+
+            <!-- Email e campo para preencher (input) -->
+
+            <label for="email">E-mail</label>
+            <input type="text" name="email" class="campo" required>
+
+            <!-- Assunto e campo para preencher (input)-->
+
+            <label for="assunto">Assunto</label>
+            <input type="text" name="assunto" class="campo">
+
+            <!-- Mensagem e campo para preencher -->
+
+            <label for="mensagem">Mensagem</label>
+            <input type="text" name="mensagem" class="campo-mensagem">
+
+            <!-- Botão para enviar a mensagem (não se comunica com backend, pois não foi implementado backend)-->
+            <button class="botao-enviar" onclick="validar()">Enviar</button>
+        </form>
+    </div>
+    <div class="container">
+        <footer class="rodape">
+    
+            <h3 class="titulo-footer">Caminhos GTI,2024</h3>
+            <p class="texto-footer">
+                Este site foi desenvolvido para um projeto sem fins lucrativos, qualquer tentativa de vender algum conteúdo do site está estritamente proibida.
+            </p>
+            <p class="copyright">Copyright &copy; 2024</p>
+        </footer>
+    </div>
+    
+    <script src="../Javascript/contato.js"></script>
+</body>
+</html>

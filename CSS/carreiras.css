@@ -1,0 +1,102 @@
+.lista-carreiras {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.lista-carreiras li {
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+  width: 25%;
+}
+
+.lista-carreiras li a {
+  background-color: var(--cor-azul);
+  border-right: 8px var(--cor-azul-escuro) solid;
+  display: flex;
+  border-radius: 16px;
+  padding: 24px 8px;
+  justify-content: center;
+  color: var(--cor-preto);
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  height: 130px;
+  max-height: 150px;
+}
+
+.lista-carreiras li a:hover{
+  transform: scale(1.1)
+}
+
+.overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 900; 
+}
+
+.descricao-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cor-azul);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px var(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 800px;
+  width: 80%;
+  font-size: 30px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.botao-fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.botao-fechar:hover {
+  color: #ff0000;
+}
+
+body.overlay-active {
+  overflow: hidden;
+}
+
+#descricao-texto{
+  font-size: 24px;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 767px) {
+    .lista-carreiras li a{
+      font-size: 13px;
+      flex-wrap: wrap;
+      width: 80px;
+      height: 80px;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #descricao-texto{
+      font-size: 15px;
+    }
+  
+}
